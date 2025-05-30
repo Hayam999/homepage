@@ -11,6 +11,17 @@
     url("./fonts/alex-brush/alexbrush-regular-webfont.woff") format("woff");
   font-display: swap;
 }
+@font-face {
+  font-family: "open_sansregular";
+  src:
+    url("./fonts/open-sans/opensans-variablefont_wdthwght-webfont.woff2")
+      format("woff2"),
+    url("/fonts/open-sans/opensans-variablefont_wdthwght-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -61,7 +72,7 @@ h6 {
 
 /* 8. Improve line wrapping */
 p {
-  text-wrap: pretty;
+  font-family: "open_sansregular", var(--system-ui);
 }
 h1,
 h2,
@@ -78,6 +89,10 @@ h1 {
 h2 {
   font-family: "Alex Brush", var(--system-ui);
   font-size: clamp(1.5rem, 4vw, 3rem);
+}
+h3 {
+  font-family: "open_sansregular", var(--system-ui);
+  font-weight: 550;
 }
 /*
   9. Create a root stacking context
@@ -101,6 +116,7 @@ footer {
   max-width: fit-content;
   justify-content: center;
   align-items: center;
+  font-family: "open_sansregular", var(--system-ui);
 }
 
 .project-info--main {
