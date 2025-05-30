@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Page Title</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="preload"
+      href="./fonts/alex-brush/alexbrush-regular-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
   </head>
   <body>
     <header>
@@ -106,7 +113,7 @@
           asperiores sunt molestias expedita ea perferendis ipsa molestiae
           deleniti tenetur, repellendus quo sed.
         </p>
-        <div class="social-media-links">
+        <div class="social-media-links one-line-icons">
           <img
             src="./icons/github-logo.svg"
             alt="Github logo"
@@ -114,14 +121,14 @@
             height="34"
           />
           <img
-            src="icons/instagram-logo.svg"
-            alt="Instagram logo"
+            src="icons/facebook-logo.svg"
+            alt="Facebook logo"
             width="24"
             height="24"
           />
           <img
-            src="icons/facebook-logo.svg"
-            alt="Facebook logo"
+            src="icons/instagram-logo.svg"
+            alt="Instagram logo"
             width="24"
             height="24"
           />
@@ -134,201 +141,196 @@
         </div>
       </section>
     </header>
-
     <main>
       <!-- Main content -->
-      <section>
+      <section class="my-projects">
         <h2>My Work</h2>
-        <div class="projects-row">
-            <div class="project-unit">
-              <div class="project-img">
-                <img src="./icons/facebook-logo.svg" alt="Project image" />
+        <div class="projects-wrapper">
+          <div class="project-unit">
+            <div class="project-img">
+              <img src="./images/projects/project1.svg" alt="Project 1" />
+            </div>
+            <section class="project-info">
+              <div class="project-info--main">
+                <span><h5>Project Name</h5></span>
+                <span class="project-links one-line-icons">
+                  <img
+                    src="./icons/github-logo.svg"
+                    alt="Github logo"
+                    width="24"
+                    height="24"
+                  />
+                  <img
+                    src="icons/live-preview-icon.svg"
+                    alt="Live preview icon"
+                    width="24"
+                    height="24"
+                  />
+                </span>
               </div>
-              <section class="project-info">
-                <div>
-                  <span><h5>Project Name</h5></span>
-                  <span class="project-links">
-                    <img
-                      src="./icons/github-logo.svg"
-                      alt="Github logo"
-                      width="24"
-                      height="24"
-                    />
-                    <img
-                      src="icons/live-preview-icon.svg"
-                      alt="Live preview icon"
-                      width="24"
-                      height="24"
-                    />
-                  </span>
-                </div>
-                <div class="project-description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore sunt laboriosam repellendus quasi qui. Eum aspernatur
-                    consectetur sequi, autem omnis enim commodi non. Recusandae,
-                    odio fuga repellat facilis illum deleniti?
-                  </p>
-                </div>
-        
-        
-            <div class="project-unit">
-                <div class="project-img">
-                   <img src="./icons/facebook-logo.svg" alt="Project image" />
+              <div class="project-description">
+                <p>
+                  Short description of the project. Just a couple of sentences
+                  will do
+                </p>
               </div>
-          <section class="project-info">
-            <div>
-              <span><h5>Project Name</h5></span>
-              <span class="project-links">
-                <img
-                  src="./icons/github-logo.svg"
-                  alt="Github logo"
-                  width="24"
-                  height="24"
-                />
-                <img
-                  src="icons/live-preview-icon.svg"
-                  alt="Live preview icon"
-                  width="24"
-                  height="24"
-                />
-              </span>
-            </div>
-            <div class="project-description">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore sunt laboriosam repellendus quasi qui. Eum aspernatur
-                consectetur sequi, autem omnis enim commodi non. Recusandae,
-                odio fuga repellat facilis illum deleniti?
-              </p>
-            </div>
-        <div class="project-unit">
-          <div class="project-img">
-            <img src="./icons/facebook-logo.svg" alt="Project image" />
+            </section>
           </div>
-          <section class="project-info">
-            <div>
-              <span><h5>Project Name</h5></span>
-              <span class="project-links">
-                <img
-                  src="./icons/github-logo.svg"
-                  alt="Github logo"
-                  width="24"
-                  height="24"
-                />
-                <img
-                  src="icons/live-preview-icon.svg"
-                  alt="Live preview icon"
-                  width="24"
-                  height="24"
-                />
-              </span>
-            </div>
-            <div class="project-description">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore sunt laboriosam repellendus quasi qui. Eum aspernatur
-                consectetur sequi, autem omnis enim commodi non. Recusandae,
-                odio fuga repellat facilis illum deleniti?
-              </p>
-            </div>
-    
-        </div>
 
-        <div class="projects-row">
-                    <div class="project-unit">
-          <div class="project-img">
-            <img src="./icons/facebook-logo.svg" alt="Project image" />
+          <div class="project-unit">
+            <div class="project-img">
+              <img src="./images/projects/project2.svg" alt="Project 2" />
+            </div>
+            <section class="project-info">
+              <div class="project-info--main">
+                <span><h5>Project Name</h5></span>
+                <span class="project-links one-line-icons">
+                  <img
+                    src="./icons/github-logo.svg"
+                    alt="Github logo"
+                    width="24"
+                    height="24"
+                  />
+                  <img
+                    src="icons/live-preview-icon.svg"
+                    alt="Live preview icon"
+                    width="24"
+                    height="24"
+                  />
+                </span>
+              </div>
+              <div class="project-description">
+                <p>
+                  Short description of the project. Just a couple of sentences
+                  will do
+                </p>
+              </div>
+            </section>
           </div>
-          <section class="project-info">
-            <div>
-              <span><h5>Project Name</h5></span>
-              <span class="project-links">
-                <img
-                  src="./icons/github-logo.svg"
-                  alt="Github logo"
-                  width="24"
-                  height="24"
-                />
-                <img
-                  src="icons/live-preview-icon.svg"
-                  alt="Live preview icon"
-                  width="24"
-                  height="24"
-                />
-              </span>
-            </div>
-            <div class="project-description">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore sunt laboriosam repellendus quasi qui. Eum aspernatur
-                consectetur sequi, autem omnis enim commodi non. Recusandae,
-                odio fuga repellat facilis illum deleniti?
-              </p>
-            </div>
-        <div class="project-unit">
-          <div class="project-img">
-            <img src="./icons/facebook-logo.svg" alt="Project image" />
-          </div>
-          <section class="project-info">
-            <div>
-              <span><h5>Project Name</h5></span>
-              <span class="project-links">
-                <img
-                  src="./icons/github-logo.svg"
-                  alt="Github logo"
-                  width="24"
-                  height="24"
-                />
-                <img
-                  src="icons/live-preview-icon.svg"
-                  alt="Live preview icon"
-                  width="24"
-                  height="24"
-                />
-              </span>
-            </div>
-            <div class="project-description">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore sunt laboriosam repellendus quasi qui. Eum aspernatur
-                consectetur sequi, autem omnis enim commodi non. Recusandae,
-                odio fuga repellat facilis illum deleniti?
-              </p>
-            </div>
-        <div class="project-unit">
-          <div class="project-img">
-            <img src="./icons/facebook-logo.svg" alt="Project image" />
-          </div>
-          <section class="project-info">
-            <div>
-              <span><h5>Project Name</h5></span>
-              <span class="project-links">
-                <img
-                  src="./icons/github-logo.svg"
-                  alt="Github logo"
-                  width="24"
-                  height="24"
-                />
-                <img
-                  src="icons/live-preview-icon.svg"
-                  alt="Live preview icon"
-                  width="24"
-                  height="24"
-                />
-              </span>
-            </div>
-            <div class="project-description">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore sunt laboriosam repellendus quasi qui. Eum aspernatur
-                consectetur sequi, autem omnis enim commodi non. Recusandae,
-                odio fuga repellat facilis illum deleniti?
-              </p>
-            </div>
 
-        </div>
-        </section>
+          <div class="project-unit">
+            <div class="project-img">
+              <img src="./images/projects/project3.svg" alt="Project 3" />
+            </div>
+            <section class="project-info">
+              <div class="project-info--main">
+                <span><h5>Project Name</h5></span>
+                <span class="project-links one-line-icons">
+                  <img
+                    src="./icons/github-logo.svg"
+                    alt="Github logo"
+                    width="24"
+                    height="24"
+                  />
+                  <img
+                    src="icons/live-preview-icon.svg"
+                    alt="Live preview icon"
+                    width="24"
+                    height="24"
+                  />
+                </span>
+              </div>
+              <div class="project-description">
+                <p>
+                  Short description of the project. Just a couple of sentences
+                  will do
+                </p>
+              </div>
+            </section>
+          </div>
+
+          <div class="project-unit">
+            <div class="project-img">
+              <img src="./images/projects/project4.svg" alt="Project 4" />
+            </div>
+            <section class="project-info">
+              <div class="project-info--main">
+                <span><h5>Project Name</h5></span>
+                <span class="project-links one-line-icons">
+                  <img
+                    src="./icons/github-logo.svg"
+                    alt="Github logo"
+                    width="24"
+                    height="24"
+                  />
+                  <img
+                    src="icons/live-preview-icon.svg"
+                    alt="Live preview icon"
+                    width="24"
+                    height="24"
+                  />
+                </span>
+              </div>
+              <div class="project-description">
+                <p>
+                  Short description of the project. Just a couple of sentences
+                  will do
+                </p>
+              </div>
+            </section>
+          </div>
+
+          <div class="project-unit">
+            <div class="project-img">
+              <img src="./images/projects/project5.svg" alt="Project 5" />
+            </div>
+            <section class="project-info">
+              <div class="project-info--main">
+                <span><h5>Project Name</h5></span>
+                <span class="project-links one-line-icons">
+                  <img
+                    src="./icons/github-logo.svg"
+                    alt="Github logo"
+                    width="24"
+                    height="24"
+                  />
+                  <img
+                    src="icons/live-preview-icon.svg"
+                    alt="Live preview icon"
+                    width="24"
+                    height="24"
+                  />
+                </span>
+              </div>
+              <div class="project-description">
+                <p>
+                  Short description of the project. Just a couple of sentences
+                  will do
+                </p>
+              </div>
+            </section>
+          </div>
+
+          <div class="project-unit">
+            <div class="project-img">
+              <img src="./images/projects/project6.svg" alt="Project 6" />
+            </div>
+            <section class="project-info">
+              <div class="project-info--main">
+                <span><h5>Project Name</h5></span>
+                <span class="project-links one-line-icons">
+                  <img
+                    src="./icons/github-logo.svg"
+                    alt="Github logo"
+                    width="24"
+                    height="24"
+                  />
+                  <img
+                    src="icons/live-preview-icon.svg"
+                    alt="Live preview icon"
+                    width="24"
+                    height="24"
+                  />
+                </span>
+              </div>
+              <div class="project-description">
+                <p>
+                  Short description of the project. Just a couple of sentences
+                  will do
+                </p>
+              </div>
+            </section>
+          </div>
         </div>
       </section>
     </main>
@@ -342,17 +344,27 @@
 
         <p>1234 Random Road Random Town, California 12345</p>
 
-        <p>
-          <span><img src="icons/whatsapp-icon.svg" alt="Whatsapp icon"
-            width="24" height="24"></span>
-          555-555-5555
-        </p>
-        <p>
-          <span><img src="icons/email-icon.svg" alt="Email icon"
-            width="24" height="24"></span>
-          hayammhmd90@gmail.com
-        </p>
-        <div class="social-media-links">
+        <div>
+          <span class="one-line-icon-with-text"
+            ><img
+              src="icons/whatsapp-icon.svg"
+              alt="Whatsapp icon"
+              width="24"
+              height="24"
+            />555-555-5555</span
+          >
+        </div>
+        <div>
+          <span class="one-line-icon-with-text"
+            ><img
+              src="icons/email-icon.svg"
+              alt="Email icon"
+              width="24"
+              height="24"
+            />hayammhmd90@gmail.com</span
+          >
+        </div>
+        <div class="social-media-links one-line-icons">
           <img
             src="./icons/github-logo.svg"
             alt="Github logo"
@@ -360,17 +372,18 @@
             height="34"
           />
           <img
-            src="icons/instagram-logo.svg"
-            alt="Instagram logo"
-            width="24"
-            height="24"
-          />
-          <img
             src="icons/facebook-logo.svg"
             alt="Facebook logo"
             width="24"
             height="24"
           />
+          <img
+            src="icons/instagram-logo.svg"
+            alt="Instagram logo"
+            width="24"
+            height="24"
+          />
+
           <img
             src="icons/linked-in-logo.svg"
             alt="Linked in logo"

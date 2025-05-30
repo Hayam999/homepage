@@ -1,0 +1,79 @@
+/* CSS HEX */
+ --valencia: #d64c33;
+--big-stone: #163b42;
+--gondola: #0d0909;
+--quincy: #67372e;
+--apricot: #ef917c;
+--bunker: #0f141c;
+--blue-dianne: #225464;
+--casal: #295c62;
+--juniper: #7a9498;
+--pale-sky: #6e7c86;
+* CSS HEX */
+ --rodeo-dust: #cfb69b;
+--bunker: #12181f;
+--glacier: #6fa7c5;
+--blue-bayoux: #406074;
+--kabul: #684c3e;
+--pickled-bluewood: #283b4b;
+--wedgewood: #4a83a5;
+--masala: #433c38;
+--copper-rust: #99514f;
+--nandor: #4c5c5c;
+
+
+/* SCSS HEX */
+$rodeo-dust: #cfb69b;
+$bunker: #12181f;
+$glacier: #6fa7c5;
+$blue-bayoux: #406074;
+$kabul: #684c3e;
+$pickled-bluewood: #283b4b;
+$wedgewood: #4a83a5;
+$masala: #433c38;
+$copper-rust: #99514f;
+$nandor: #4c5c5c;
+
+
+/* SCSS RGB */
+--rodeo-dust: rgba(207,182,155,1);
+--bunker: rgba(18,24,31,1);
+--glacier: rgba(111,167,197,1);
+--blue-bayoux: rgba(64,96,116,1);
+--kabul: rgba(104,76,62,1);
+--pickled-bluewood: rgba(40,59,75,1);
+--wedgewood: rgba(74,131,165,1);
+--masala: rgba(67,60,56,1);
+--copper-rust: rgba(153,81,79,1);
+--nandor: rgba(76,92,92,1);
+
+
+
+
+
+/* SCSS HEX */
+$valencia: #d64c33;
+$big-stone: #163b42;
+$gondola: #0d0909;
+$quincy: #67372e;
+$apricot: #ef917c;
+$bunker: #0f141c;
+$blue-dianne: #225464;
+$casal: #295c62;
+$juniper: #7a9498;
+$pale-sky: #6e7c86;
+
+
+/* SCSS RGB */
+--valencia: rgba(214,76,51,1);
+--big-stone: rgba(22,59,66,1);
+--gondola: rgba(13,9,9,1);
+--quincy: rgba(103,55,46,1);
+--apricot: rgba(239,145,124,1);
+--bunker: rgba(15,20,28,1);
+--blue-dianne: rgba(34,84,100,1);
+--casal: rgba(41,92,98,1);
+--juniper: rgba(122,148,152,1);
+--pale-sky: rgba(110,124,134,1);
+
+

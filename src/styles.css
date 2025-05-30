@@ -1,3 +1,16 @@
+:root {
+  --side-padding: 3.5rem;
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@font-face {
+  font-family: "Alex Brush";
+  src:
+    url("./fonts/alex-brush/alexbrush-regular-webfont.woff2") format("woff2"),
+    url("./fonts/alex-brush/alexbrush-regular-webfont.woff") format("woff");
+  font-display: swap;
+}
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -58,7 +71,14 @@ h5,
 h6 {
   text-wrap: balance;
 }
-
+h1 {
+  font-family: "Alex Brush", var(--system-ui);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+h2 {
+  font-family: "Alex Brush", var(--system-ui);
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
 /*
   9. Create a root stacking context
 */
@@ -69,7 +89,61 @@ h6 {
 
 header,
 footer {
-  width: 100vw;
-  padding: 1em;
   background-color: cadetblue;
+  padding-right: var(--side-padding);
+  padding-left: var(--side-padding);
+}
+
+.one-line-icon-with-text,
+.one-line-icons {
+  display: flex;
+  gap: 0.5em;
+  max-width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-info--main {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-projects {
+  padding: 2rem var(--side-padding) 10rem var(--side-padding);
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1em;
+  @media (max-width: 766px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-unit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5em;
+  padding: 1em;
+  max-width: 95%;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.project-img {
+  max-width: 10rem;
+  height: auto;
 }

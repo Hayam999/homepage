@@ -1,5 +1,20 @@
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
-            <path d="M75.916 54.2 122.542 0h-11.05L71.008 47.06 38.672 0H1.376l48.898 71.164L1.376 128h11.05L55.18 78.303 89.328 128h37.296L75.913 54.2ZM60.782 71.79l-4.955-7.086-39.42-56.386h16.972L65.19 53.824l4.954 7.086 41.353 59.15h-16.97L60.782 71.793Z" fill="#000" style="stroke-width:.104373"></path>
-            </svg>
-          
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <g fill="#000000">
+    <!-- Main rounded square container -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M36.5 5.103c-17.35 0-31.397 14.047-31.397 31.397v55c0 17.35 14.047 31.397 31.397 31.397h55c17.35 0 31.397-14.047 31.397-31.397v-55c0-17.35-14.047-31.397-31.397-31.397h-55zm55 10.794c11.404 0 20.603 9.199 20.603 20.603v55c0 11.404-9.199 20.603-20.603 20.603h-55c-11.404 0-20.603-9.199-20.603-20.603v-55c0-11.404 9.199-20.603 20.603-20.603h55z"/>
+    
+    <!-- Camera circle (main profile area) -->
+    <circle cx="64" cy="64" r="24.5" stroke="#000000" stroke-width="5.5" fill="none"/>
+    <circle cx="64" cy="64" r="15.8" fill="#000000"/>
+    
+    <!-- Camera lens dot (story indicator style) -->
+    <circle cx="89.5" cy="38.5" r="6.2" fill="#000000"/>
+    
+    <!-- Decorative elements to match GitHub's detail level -->
+    <path d="M64 33.5c-16.845 0-30.5 13.655-30.5 30.5s13.655 30.5 30.5 30.5 30.5-13.655 30.5-30.5-13.655-30.5-30.5-30.5zm0 5.5c13.807 0 25 11.193 25 25s-11.193 25-25 25-25-11.193-25-25 11.193-25 25-25z"/>
+    
+    <!-- Inner camera details -->
+    <circle cx="64" cy="64" r="8.5" stroke="#ffffff" stroke-width="1.2" fill="none"/>
+  </g>
+</svg>
