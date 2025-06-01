@@ -2,6 +2,7 @@
   --side-padding: 3.5rem;
   --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --about-me-padding: 0.5rem;
 }
 
 @font-face {
@@ -103,7 +104,8 @@ h3 {
 }
 
 header {
-  padding: 3rem var(--side-padding) 4rem var(--side-padding);
+  padding: 2rem var(--side-padding) 4rem var(--side-padding);
+  margin-bottom: 3rem;
 }
 
 footer {
@@ -119,6 +121,9 @@ footer {
   justify-content: center;
   align-items: center;
   font-family: "open_sansregular", var(--system-ui);
+}
+.one-line-icons {
+  gap: 1rem;
 }
 
 .project-info--main {
@@ -147,6 +152,8 @@ footer {
   @media (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  margin-top: 2rem;
 }
 
 .project-unit {
@@ -182,14 +189,15 @@ footer {
 .contact-me {
   display: flex;
   flex-direction: column;
+  font-size: clamp(12px, 4vw, 24px);
 }
-
 #footer-img {
   display: flex;
 }
 
 #about-me--text {
-  margin-bottom: 1rem;
+  padding-bottom: 2 rem;
+  margin-bottom: 3rem;
 }
 
 .header-wrapper {
@@ -199,6 +207,12 @@ footer {
 .name-and-image {
   position: relative;
   display: flex;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #name {
@@ -208,10 +222,12 @@ footer {
 }
 
 .about-me {
-  padding: 2rem;
-  box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: clamp(12px, 4vw, 24px);
+  max-height: 80%;
+  padding: var(--about-me-padding);
 }
 
 @media (min-width: 1200px) {
@@ -221,7 +237,7 @@ footer {
   }
 
   .contact-me {
-    max-width: 38%;
+    max-width: 40%;
   }
 
   .name-and-image {
@@ -234,6 +250,21 @@ footer {
     left: 10%;
     justify-self: center;
   }
+
+  #header-icons {
+    position: absolute;
+    bottom: var(--about-me-padding);
+    right: var(--about-me-padding);
+  }
+  #hayam-img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  #about-me-container {
+    align-self: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
 }
 
 @media (min-width: 920px) and (max-width: 1200px) {
@@ -243,7 +274,7 @@ footer {
   }
 
   .contact-me {
-    max-width: 48%;
+    max-width: 50%;
   }
 
   #footer-img {
