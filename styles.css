@@ -356,15 +356,18 @@ header .name-and-image img {
   .text-wrapper {
     margin: auto;
     margin-top: 60px;
-    transform: translate(1%, 5%);
+    max-width: 90%;
+    transform: translate(0, 5%);
   }
 
   header .header-wrapper {
     display: block;
   }
   header .name-and-image {
+    min-width: 45%;
+    max-width: 50%;
     float: left;
-    transform: translate(-10%, -25%);
+    transform: translate(-5%, -25%);
     z-index: 1;
   }
   #footer-img {
@@ -402,6 +405,13 @@ header .name-and-image img {
     height: auto;
     object-fit: cover;
     display: block;
+
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 15%,
+      black 100%
+    );
   }
   .header-wrapper {
     display: flex;
