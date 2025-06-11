@@ -28,4 +28,4 @@ alt="Desktop view of project">
 
 ## Demo
 
-You can view a live demo of the sign-up-Form [here](https://hayam999.github.io/homepage/).
+You can view a live demo of the Homepage [here](https://hayam999.github.io/homepage/).
