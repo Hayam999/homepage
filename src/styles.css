@@ -6,23 +6,37 @@
 }
 
 @font-face {
-  font-family: "Alex Brush";
+  font-family: "action_manregular";
   src:
-    url("./fonts/alex-brush/alexbrush-regular-webfont.woff2") format("woff2"),
-    url("./fonts/alex-brush/alexbrush-regular-webfont.woff") format("woff");
+    url("./fonts/action-man/action_man-webfont.woff2") format("woff2"),
+    url("./fonts/action-man/action_man-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "open_sansregular";
+  font-family: "action_man_extendedregular";
   src:
-    url("./fonts/open-sans/opensans-variablefont_wdthwght-webfont.woff2")
+    url("./fonts/action-man/action_man_extended-webfont.woff2") format("woff2"),
+    url("./fonts/action-man/action_man_extended-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "action_man_shadeditalic";
+  src:
+    url("./fonts/action-man/action_man_shaded_italic-webfont.woff2")
       format("woff2"),
-    url("/fonts/open-sans/opensans-variablefont_wdthwght-webfont.woff")
+    url("./fonts/action-man/action_man_shaded_italic-webfont.woff")
       format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -71,10 +85,14 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* 8. Improve line wrapping */
 p {
-  font-family: "open_sansregular", var(--system-ui);
+  font-family: "action_manregular", var(--system-ui);
 }
+#phone-number,
+#email {
+  font-family: "action_manregular", var(--system-ui);
+}
+
 h1,
 h2,
 h3,
@@ -84,15 +102,15 @@ h6 {
   text-wrap: balance;
 }
 h1 {
-  font-family: "Alex Brush", var(--system-ui);
+  font-family: "action_man_shadeditalic", var(--system-ui);
   font-size: clamp(2.5rem, 5vw, 4rem);
 }
 h2 {
-  font-family: "Alex Brush", var(--system-ui);
+  font-family: "action_man_shadeditalic", var(--system-ui);
   font-size: clamp(1.5rem, 4vw, 3rem);
 }
 h3 {
-  font-family: "open_sansregular", var(--system-ui);
+  font-family: "action_manregular", var(--system-ui);
   font-weight: 550;
 }
 /*
@@ -104,12 +122,13 @@ h3 {
 }
 
 header {
+  position: relative;
   padding: 2rem var(--side-padding) 4rem var(--side-padding);
-  margin-bottom: 3rem;
+  margin: auto;
 }
 
 footer {
-  background-color: cadetblue;
+  background-color: #d65e48;
   padding: 3em var(--side-padding) 2em var(--side-padding);
   position: relative;
 }
@@ -164,9 +183,7 @@ footer {
   gap: 1.5em;
   padding: 1em;
   max-width: 95%;
-  box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .project-img {
@@ -215,7 +232,43 @@ footer {
 }
 
 .custom-shape-divider-top-1749444663 .shape-fill {
-  fill: #424f33;
+  fill: #d65e48;
+}
+
+/* d65e48 */
+header .header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .name-and-image {
+  position: relative;
+
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  min-width: 50%;
+  max-width: 53%;
+}
+
+header .name-and-image img {
+  width: 100%;
+  display: block;
+}
+
+.name-and-image h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.text-wrapper {
+  padding: var(--about-me-padding);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  background-color: white;
 }
 
 #about-me--text {
@@ -223,63 +276,29 @@ footer {
   margin-bottom: 3rem;
 }
 
-#header-icons {
-  position: relative;
-}
-
 #name {
   position: absolute;
-  z-index: 1;
-  color: #fff;
-  bottom: 0%;
-  min-width: 80%;
-  max-width: 80%;
-  left: 10%;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
   text-align: center;
-}
-.name-and-image {
-  position: relative;
-  display: flex;
+  color: white;
+  z-index: 2;
+  overflow: visible;
+  white-space: nowrap;
 }
 
-#hayam-img {
-  width: 100%;
-  display: flex;
+#header-icons {
+  position: relative;
+  min-width: 70%;
+  max-width: 70%;
+  left: 43%;
 }
+
 #hayam-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  flex: 1;
-}
-.header-wrapper {
-  background-color: #fff;
-  padding: var(--about-me-padding);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  display: flex;
-}
-
-#header-icons {
-  position: absolute;
-  bottom: calc(var(--about-me-padding) + 2vw);
-  left: calc(65% - 3vw);
-}
-
-.name-and-image {
-  width: 83%;
-  position: absolute;
-  transform: translate(-100%, -15%);
-
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.header-wrapper {
-  width: 55%;
-  margin-top: 3vw;
-  position: relative;
-  transform: translate(86%, 0px);
-}
-.text-wrapper {
-  padding-left: 2vw;
 }
 
 @media (min-width: 1200px) {
@@ -287,13 +306,12 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
   }
-
   .contact-me {
     max-width: 40%;
   }
 }
 
-@media (min-width: 920px) and (max-width: 1200px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   .footer-wrapper {
     align-items: flex-start;
     justify-content: space-between;
@@ -302,20 +320,37 @@ footer {
     max-width: 50%;
   }
 
+  .name-and-image h1 {
+    text-align: left;
+    left: 15px;
+  }
+  .text-wrapper {
+    margin: auto;
+    margin-top: 60px;
+    transform: translate(1%, 5%);
+  }
+
+  header .header-wrapper {
+    display: block;
+  }
+  header .name-and-image {
+    float: left;
+    transform: translate(-10%, -25%);
+    z-index: 1;
+  }
   #footer-img {
     max-width: 50%;
   }
-  .header-wrapper {
-    width: 100%;
-    transform: translate(0%, 0%);
+  #header-icons {
+    left: 48%;
   }
-  .name-and-image {
-    transform: translate(0%, 0%);
-    z-index: 0;
+  #name {
+    top: 0%;
+    left: 68%;
   }
 }
 
-@media (max-width: 919px) {
+@media (max-width: 800px) {
   footer {
     padding: 0;
   }
@@ -333,18 +368,26 @@ footer {
     margin-top: 2rem;
   }
 
-  #footer-img {
-    align-self: center;
-    max-width: 100%;
+  #footer-img img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
   }
   .header-wrapper {
+    display: flex;
     flex-direction: column;
     padding: 0;
   }
+  header .name-and-image {
+    min-width: 100%;
+  }
   .text-wrapper {
-    margin-top: 5vh;
-    padding: var(--about-me-padding);
+    padding: calc(var(--about-me-padding) * 2);
     text-align: center;
+  }
+  #name {
+    font-size: 150%;
   }
   #header-icons {
     min-width: 70%;
