@@ -128,7 +128,15 @@ header {
 }
 
 footer {
-  background-color: #d65e48;
+  background: #133b43; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    300deg,
+    #c04024,
+    #2a5f6b,
+    #133b43
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(300deg, #c04024, #2a5f6b, #133b43);
+
   padding: 3em var(--side-padding) 2em var(--side-padding);
   position: relative;
 }
@@ -232,7 +240,28 @@ footer {
 }
 
 .custom-shape-divider-top-1749444663 .shape-fill {
-  fill: #d65e48;
+  fill: #133b43; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    25deg,
+    #0f2f35,
+    #284b5a,
+    #1c3a44
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(25deg, #0f2f35, #284b5a, #1c3a44);
+
+  /* fill: #0f2027;  
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); 
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* d65e48 */
